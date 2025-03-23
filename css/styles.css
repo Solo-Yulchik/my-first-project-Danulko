@@ -60,6 +60,8 @@ h6 {
 }
 
 .header-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -75,6 +77,9 @@ h6 {
 }
 
 .header-menu-list {
+  display: flex;
+  /* margin-left: auto; */
+  gap: 24px;
 }
 
 .header-menu-item {
@@ -110,23 +115,37 @@ h6 {
 .hero-title {
   font-weight: 500;
   font-size: 28px;
-  /* line-height: 34px; */
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border-radius: 100px;
+  background: #fd9222;
+  padding: 14px 40px;
+  border: none;
+  margin-right: 14px;
+}
+
+.hero-buttons-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .hero-anchor-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  background-color: transparent;
 }
 
 .hero-scroll-link {
@@ -136,6 +155,7 @@ h6 {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 /* -------------------HERO----------------------- */
 
@@ -149,9 +169,12 @@ h6 {
 .features-list {
   padding-left: 36px;
   padding-right: 36px;
+  display: flex;
+  gap: 70px;
 }
 
 .features-item {
+  flex-basis: calc((100% - 140px) / 3);
 }
 
 .features-subtitle {
@@ -176,7 +199,9 @@ h6 {
 }
 
 .taste-title {
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
+  max-width: 411px;
+  margin: 0 auto 28px;
 }
 
 .taste-text {
@@ -186,10 +211,13 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+  max-width: 486px;
 }
 
 .taste-list {
+  display: flex;
+  gap: 19px;
 }
 
 .taste-item {
@@ -198,6 +226,7 @@ h6 {
   width: 270px;
   height: 270px;
   padding: 28px 32px;
+  flex-basis: calc((100% - 57px) / 4);
 }
 
 .taste-img {
