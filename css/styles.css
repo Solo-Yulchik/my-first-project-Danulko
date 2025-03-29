@@ -55,13 +55,11 @@ h6 {
 
 /* -------------------HEADER----------------------- */
 .header {
-  padding-top: 28px;
-  padding-bottom: 28px;
 }
 
 .header-navigation {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .header-logo {
@@ -70,6 +68,8 @@ h6 {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header-logo-italic {
@@ -85,13 +85,19 @@ h6 {
 .header-menu-item {
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 16px; */
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: inline-block;
 }
 
 .header-menu-link:hover,
@@ -99,6 +105,25 @@ h6 {
   color: chocolate;
 }
 
+.header-soc-list {
+  display: flex;
+  gap: 18px;
+}
+
+a {
+  display: inline-block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111;
+}
+
+.header-soc-icon:hover {
+  stroke: #fd9222;
+}
 /* -------------------HEADER----------------------- */
 
 /* -------------------HERO----------------------- */
@@ -107,6 +132,18 @@ h6 {
   background-color: #1e1823;
   border-radius: 30px;
   margin-bottom: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  background-image: linear-gradient(
+      rgba(30, 24, 35, 0.4),
+      rgba(30, 24, 35, 0.4)
+    ),
+    url(../img/chocolate-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-wraper {
@@ -260,6 +297,19 @@ h6 {
   margin-bottom: 50px;
 }
 
+.made-title::before {
+  display: inline-block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/teast1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.made-title::after {
+  content: '|';
+}
 .made-image {
 }
 
@@ -278,6 +328,26 @@ h6 {
 
 .made-item {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* &::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #4c4c4c;
+    border: 1px solid #eceded;
+  } */
+}
+
+.made-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
 }
 
 .made-item:last-child {
