@@ -124,6 +124,10 @@ a {
 .header-soc-icon:hover {
   stroke: #fd9222;
 }
+
+img {
+  display: block;
+}
 /* -------------------HEADER----------------------- */
 
 /* -------------------HERO----------------------- */
@@ -168,8 +172,14 @@ a {
   padding: 14px 40px;
   border: none;
   margin-right: 14px;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
 }
 
+.hero-btn:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
 .hero-buttons-wrap {
   display: flex;
   align-items: center;
@@ -194,6 +204,7 @@ a {
   color: #fff;
   margin-left: auto;
 }
+
 /* -------------------HERO----------------------- */
 
 /* ---------------FEATURES--------------------- */
@@ -261,12 +272,43 @@ a {
   border: 1px solid #fd9222;
   border-radius: 15px;
   width: 270px;
-  height: 270px;
-  padding: 28px 32px;
+
+  /* height: 270px; */
+  /* padding: 28px 32px; */
   flex-basis: calc((100% - 57px) / 4);
 }
 
 .taste-img {
+  margin: 0 auto;
+}
+
+.taste-img-p {
+  position: relative;
+  overflow: hidden;
+}
+
+.taste-item-text {
+  position: absolute;
+  top: 0;
+  background-color: #fd9222;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px 16px;
+  height: 100%;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transform: translateY(100%);
+}
+
+.taste-item:hover .taste-item-text {
+  transform: translateY(0);
+}
+.taste-test {
+  padding: 28px 32px;
 }
 
 .taste-subtitle {
@@ -278,6 +320,7 @@ a {
   text-transform: uppercase;
   color: #111;
 }
+
 /* зробити колір 2 сусідніх заголовків білим */
 /* ---------------TASTE--------------------- */
 
