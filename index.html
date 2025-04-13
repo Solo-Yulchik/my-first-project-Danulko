@@ -33,7 +33,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a
@@ -90,12 +90,98 @@
               ></a>
             </li>
           </ul>
+          <button
+            class="header-modal-burger"
+            type="button"
+          >
+            <svg
+              class="header-modal-icon"
+              width="24"
+              height="16"
+            >
+              <use
+                href="./img/symbol-defs.svg#icon-burger"
+                icon-burger
+              ></use>
+            </svg>
+          </button>
         </nav>
       </div>
-    </header> -->
+      <div class="header-modal-menu">
+        <div class="header-modal-btn-nav">
+          <button
+            class="header-modal-btn"
+            type="button"
+          >
+            <svg
+              class="header-modal-close"
+              width="14"
+              height="14"
+            >
+              <use href="./img/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="header-modal-list">
+              <li class="header-modal-item">
+                <a
+                  class="header-modal-link current"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li class="header-modal-item">
+                <a
+                  class="header-modal-link"
+                  href=""
+                  >How it's made?</a
+                >
+              </li>
+              <li class="header-modal-item">
+                <a
+                  class="header-modal-link"
+                  href=""
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="header-modal-soc-list">
+          <li class="header-modal-soc-item">
+            <a
+              class="header-modal-soc-link"
+              href=""
+              ><svg
+                class="header-modal-soc-icon"
+                width="20"
+                height="20"
+              >
+                <use
+                  href="./img/symbol-defs.svg#icon-instagram-header"
+                ></use></svg
+            ></a>
+          </li>
+          <li class="header-modal-soc-item">
+            <a
+              class="header-modal-soc-link"
+              href=""
+              ><svg
+                class="header-modal-soc-icon"
+                width="22"
+                height="22"
+              >
+                <use
+                  href="./img/symbol-defs.svg#icon-twitter-header"
+                ></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-wraper">
             <h1 class="hero-title">
@@ -117,12 +203,23 @@
               <a
                 href=""
                 class="hero-scroll-link"
-                >scroll down</a
-              >
+                >scroll down
+                <span class="hero-scroll-img">
+                  <svg
+                    class="hero-scroll-icon"
+                    width="10"
+                    ;
+                    height="6"
+                    ;
+                  >
+                    <use
+                      href="./img/symbol-defs.svg#icon-choice"
+                    ></use></svg></span
+              ></a>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section
         id="features"
@@ -183,6 +280,7 @@
             <li class="taste-item">
               <div class="taste-img-p">
                 <img
+                  srcset="./img/teast1.png 1x, ./img/teast1-2x.png 2x"
                   src="./img/teast1.png"
                   alt="chocolate bar"
                   width="206"
@@ -205,6 +303,7 @@
             <li class="taste-item">
               <div class="taste-img-p">
                 <img
+                  srcset="./img/teast2.png 1x, ./img/teast2-2x.png 2x"
                   src="./img/teast2.png"
                   alt="milk bottle"
                   width="206"
@@ -226,6 +325,7 @@
             <li class="taste-item">
               <div class="taste-img-p">
                 <img
+                  srcset="./img/teast3.png 1x, ./img/teast3-2x.png 2x"
                   src="./img/teast3.png"
                   alt="hazelnuts"
                   width="206"
@@ -244,6 +344,7 @@
             <li class="taste-item">
               <div class="taste-img-p">
                 <img
+                  srcset="./img/teast4.png 1x, ./img/teast4-2x.png 2x"
                   src="./img/teast4.png"
                   alt="coffee beans"
                   width="206"
@@ -264,7 +365,7 @@
         </div>
       </section>
 
-      <!-- <section
+      <section
         id="made"
         class="made"
       >
@@ -274,13 +375,33 @@
               HOW IT'S <span class="accent">MADE?</span>
             </h2>
             <div class="made-box-img">
-              <img
-                src="./img/teast5.jpg"
-                alt="liquide chocolate"
-                width="600"
-                height="400"
-                class="made-image"
-              />
+              <picture>
+                <source
+                  srcset="./img/teast5.jpg 1x, ./img/teast5-2x.jpg 2x"
+                  media="(min-width:1166px)"
+                />
+                <source
+                  srcset="
+                    ./img/teast5-tablet.jpg    1x,
+                    ./img/teast5-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/teast5-mobil.jpg    1x,
+                    ./img/teast5-mobil-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/teast5.jpg"
+                  alt="liquide chocolate"
+                  width="614"
+                  class="made-image"
+                />
+              </picture>
+
               <div class="made-box-list">
                 <h3 class="made-subtitle">
                   Try our chocolates today and discover the perfect balance of
@@ -322,9 +443,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section
+      <section
         id="loved"
         class="reviews"
       >
@@ -385,7 +506,7 @@
             Leave a review
           </button>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- <footer class="footer">
